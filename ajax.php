@@ -22,7 +22,6 @@ xmlhttp.onreadystatechange = function(){
                 var d =      document.getElementById("demo3").innerHTML += myObj[i].ContactNo+"<br>";
                 var e =      document.getElementById("demo4").innerHTML += myObj[i].Age+"<br>";
 
-                document.write('<table border=1 cellpadding=5 style=width:100%;text-align:center;><tr><th>Id</th><th>FName</th><th>LName</th><th>EmailId</th><th>ContactNo</th><th>Age</th></tr><tr><td>'+f+'</td><td>'+a+'</td><td>'+b+'</td><td>'+c+'</td><td>'+d+'</td><td>'+e+'</td></tr></table>')
             }
     }
 };
@@ -37,12 +36,12 @@ xmlhttp.send();
 </script>
 </head>
     <body>
-        <p id="demo"></p>
-        <p id="demo1"></p>
-        <p id="demo2"></p>
-        <p id="demo3"></p>
-        <p id="demo4"></p>
-        <p id="demo5"></p>
+        <table border='1' cellpadding='5' style='width:100%;text-align:center;'>
+            <tr><th>Id</th><th>FName</th><th>LName</th><th>EmailId</th><th>ContactNo</th><th>Age</th></tr>
+            <tr><td id="demo5"></td><td id="demo"></td><td id="demo1"></td><td id="demo2"></td><td id="demo3"></td><td id="demo4"></td></tr>
+        </table>
     </body>
 </html>
+
+
 
